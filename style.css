@@ -39,7 +39,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .home{
     display: flex;
@@ -229,7 +229,36 @@ section .title{
     clear: both;
 }
 
+.project .video {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
 /* contact section start */
+.contact {
+    background-color: #FFF4BE;
+}
+
+.contact .contact-content .text{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.contact .contact-content p{
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
 .contact .contact-content .row{
     position: relative;
     text-align: center;
@@ -245,24 +274,7 @@ section .title{
     padding: 20px;
 }
 
-.contact .contact-content .text{
-    position: relative;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 30px;
-}
 
-.contact .contact-content p{
-    position: relative;
-    text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 10px;
-}
-.contact .contact-content .info .head{
-    font-weight: 600;
-}
 .contact .contact-content .info .sub-title{
     font-weight: 500;
 }
