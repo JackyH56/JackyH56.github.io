@@ -2,25 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacky Huang Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <!-- Navbar section -->
-    <ul class="navbar">
-        <a href="#contact">Contact</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
+    <div class="navbar" id = "myNavbar">
         <a href="#home">Home</a>
-    </ul>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="addResponsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <!-- Home section -->
     <section class="home" id="home">
         <div class="home-content">
             <div class="text-1">Hello, my name is</div>
             <div class="text-2">Jacky Huang</div>
-            <div class="text-3">And i'm a <span>software developer</span></div>
+            <div class="text-3">And I'm a <span>software developer</span></div>
         </div>
     </section>
 
@@ -38,6 +45,7 @@
             </div>
         </div>
     </section>
+
     <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
@@ -51,7 +59,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>Python</span>
-                            <span>90%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line python"></div>
                     </div>
@@ -88,11 +96,20 @@
         </div>
     </section>
 
+    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp
     <!-- project section start -->
     <section class="project" id="project">
-        <h2 class="title"> - Most Recent Project - </h2>
-        <div class="video">
-            <iframe width="629" height="393" src="https://www.youtube.com/embed/RK6-O9bmFcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="title"> - Project Showcase - </h2>
+        <div class="project-content">
+            <div class = "column left">
+                <div class = "video">
+                    <iframe src="https://www.youtube.com/embed/RK6-O9bmFcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class = "column right">
+                <div class="text">Converse and Cook</div>
+                <p>This web app will be used by the leaders and volunteers of Converse and Cook to make grocery shopping for their cooking events easier. Volunteers and leaders will be able to add recipes to the app through a user-friendly interface. The software will store the recipe and make it accessible for other users as well as the general public to see. Anyone will be able to see recipes and change the units of its ingredients or scale the serving size, which facilitates the grocery shopping process. After shopping is done, volunteers can upload their receipt in order to be reimbursed by the organization.</p>
+            </div>
         </div>
     </section>
 
@@ -100,7 +117,7 @@
     <section class="contact" id="contact">
         <h2 class="title"> - Contact me - </h2>
         <div class="contact-content">
-            <p>I am currently looking for any related internship oppurtunities in the Vancouver, Edmonton, and Calgary areas. I can always be contacted through phone or email. Also feel free to check out some of my work on GitHub!</p>
+            <p>I am currently looking for any related internship oppurtunities in the Vancouver, Edmonton, Toronto, and Calgary areas. I can always be contacted through phone or email. Feel free to check out some of my work on GitHub!</p>
             <div class="row">
                 <div class="info">
                     <div class="head">Name</div>
@@ -124,6 +141,6 @@
         </div>
     </section>
 
-    
+    <button onclick="topFunction()" class="myBtn" title="Back to top">^</button>
 </body>
 </html>
