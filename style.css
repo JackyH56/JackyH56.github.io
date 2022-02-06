@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 .about, .skills, .project, .contact, .title{
-    font-family: 'Open', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 .skills, .contact {
@@ -28,16 +28,19 @@
     .navbar.responsive {
         flex-direction: column;
     }
+
     .navbar.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
+
     .navbar.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
+
     .navbar a:hover {
         color: grey
     }
@@ -47,7 +50,6 @@
     }
     .skills .skills-content .left{
         flex: 100%;
-        
     }
 
     .skills .skills-content .right{
@@ -67,20 +69,17 @@
     .about .about-content .column{
         width: 100%;
     }
+
     .about .about-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
+
     .about .about-content .right{
         flex: 100%;
     }
-
-    
 }
-
-    
-
 
 .navbar {
     position: fixed; /* Set the navbar to fixed position */
@@ -163,7 +162,6 @@ section .title{
 }
 
 /* about section styling */
-
 .about .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -175,23 +173,28 @@ section .title{
 .about .about-content .left{
     width: 45%;
 }
+
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
+
 .about .about-content .right{
     width: 55%;
 }
+
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .about .about-content .right .text span{
     color: royalblue;
 }
+
 .about .about-content .right p{
     text-align: justify;
     font-size: 20px;
@@ -221,6 +224,7 @@ section .title{
     padding-top: 10px;
 
 }
+
 .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -239,10 +243,12 @@ section .title{
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .skills .skills-content .left p{
     text-align: justify;
     font-size: 20px;
 }
+
 .skills .skills-content .right{
     width: 45%;
 }
@@ -250,22 +256,26 @@ section .title{
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
+
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
+
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
+
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
+
 .skills .skills-content .right .line::before{
     content: "";
     position: absolute;
@@ -274,18 +284,23 @@ section .title{
     top: 0;
     background: royalblue;
 }
+
 .skills-content .right .python::before{
     width: 80%;
 }
+
 .skills-content .right .sql::before{
     width: 70%;
 }
+
 .skills-content .right .html::before{
     width: 60%;
 }
+
 .skills-content .right .css::before{
     width: 60%;
 }
+
 .skills-content .right .js::before{
     width: 50%;
 }
@@ -308,6 +323,7 @@ section .title{
     width: 90%;
     height: 60vh;
 }
+
 .project .project-content .left .video{
     padding-bottom: 30px;
 }
@@ -341,15 +357,15 @@ section .title{
 }
 
 .contact .contact-content p{
-    position: relative;
-    text-align: center;
     font-weight: 500;
     font-size: 20px;
     margin-top: 20px ;
 }
+
 .contact .contact-content .info .head{
     font-weight: 600;
 }
+
 .contact .contact-content .row{
     position: relative;
     text-align: center;
@@ -392,4 +408,4 @@ section .title{
   
 .myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-  }
+}
