@@ -9,6 +9,7 @@
 
 .about, .skills, .project, .contact, .title{
     font-family: 'Lora', serif;
+    padding-top: 30px;
 }
 
 .skills, .contact {
@@ -43,6 +44,10 @@
 
     .navbar a:hover {
         color: grey
+    }
+
+    .about .about-content .right .text span{
+        padding-left: 0 !important;
     }
 
     .skills .skills-content .column {
@@ -153,12 +158,47 @@ section .title{
 
 .home .home-content .text-3{
     font-size: 40px;
-    margin: 5px 0;
 }
 
-.home .home-content .text-3 span{
+.home .home-content .words {
+    height: 60px;
+    overflow: hidden;
+}
+.home .home-content span{
+    display: block;
     color: royalblue;
     font-weight: 500;
+    animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+    0% {
+        transform: translateY(0%);
+    }
+    15% {
+        transform: translateY(-110%);
+    }
+    23%, 25% {
+        transform: translateY(-100%);
+    }
+    40% {
+        transform: translateY(-210%);
+    }
+    48%,50% {
+        transform: translateY(-200%);
+    }
+    65% {
+        transform: translateY(-90%);
+    }
+    73%, 75% {
+        transform: translateY(-100%);
+    }
+    90% {
+        transform: translateY(10%);
+    }
+    98%, 100% {
+        transform: translateY(0%);
+    }
 }
 
 /* about section styling */
@@ -186,17 +226,27 @@ section .title{
 }
 
 .about .about-content .right .text{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+.about .about-content .right .text .words{
+    overflow: hidden;
+    height: 30px;
+}
 
 .about .about-content .right .text span{
+    display: block;
     color: royalblue;
+    font-weight: 500;
+    padding-left: 10px;
+    animation: spin_words 6s infinite;
 }
 
 .about .about-content .right p{
-    text-align: justify;
+    text-align: left;
     font-size: 20px;
 
 }
@@ -221,8 +271,6 @@ section .title{
 /* skills section styling */
 .skills{
     background: url("backgroundnopic.png");
-    padding-top: 10px;
-
 }
 
 .skills .skills-content{
@@ -245,7 +293,7 @@ section .title{
 }
 
 .skills .skills-content .left p{
-    text-align: justify;
+    text-align: left;
     font-size: 20px;
 }
 
@@ -329,7 +377,7 @@ section .title{
 }
 
 .project .project-content p {
-    text-align: justify;
+    text-align: left;
     font-size: 20px;
 }
 
